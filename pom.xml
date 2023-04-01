@@ -9,7 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>sample-maven-plugin</name>
+    <name>sample-maven-plugin-parent</name>
     <description>Sample Maven plugin</description>
 
     <developers>
@@ -43,5 +43,15 @@
         </dependencies>
     </dependencyManagement>
 
-
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>ca.telagene</groupId>
+                    <artifactId>sample-maven-plugin</artifactId>
+                    <version>0.0.1-SNAPSHOT</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

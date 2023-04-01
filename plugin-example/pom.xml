@@ -21,9 +21,9 @@
             <plugin>
                 <groupId>ca.telagene</groupId>
                 <artifactId>sample-maven-plugin</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
                 <executions>
                     <execution>
+                          <id>plugin-execution</id>
                         <goals>
                             <goal>execute</goal>
                         </goals>
